@@ -22,7 +22,7 @@ class StudentsController < ApplicationController
 
   def index
     @students = Student.all
-    params[:search] ? @students = Students.search(params[:search]) : @students = Studetns.all
+    params[:search] ? @students = Students.search(params[:search]) : @students = Students.all
   end
 
   def student_params
